@@ -27,7 +27,7 @@ const AudioPlayer = () => {
     }, []);
 
     return (
-        <div style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 1000 }}>
+        <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
             <audio ref={audioRef} src={url} loop />
             <Button
                 onClick={togglePlay}

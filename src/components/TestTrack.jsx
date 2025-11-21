@@ -36,7 +36,7 @@ export default function TestTrack() {
         <group>
             <mesh ref={ref} receiveShadow>
                 <planeGeometry args={[100, 100]} />
-                <meshStandardMaterial color="green" />
+                <meshStandardMaterial color="#444" />
             </mesh>
 
             {/* Checkpoints placed in a loop */}

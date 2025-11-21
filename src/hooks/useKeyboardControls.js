@@ -5,22 +5,22 @@ export const useKeyboardControls = () => {
 
     useEffect(() => {
         const handleKeyDown = (e) => {
-            switch (e.key) {
-                case 'ArrowUp': keys.current.forward = true; break;
-                case 'ArrowDown': keys.current.backward = true; break;
-                case 'ArrowLeft': keys.current.left = true; break;
-                case 'ArrowRight': keys.current.right = true; break;
-                case 'Shift': keys.current.drift = true; break;
+            switch (e.key.toLowerCase()) {
+                case 'arrowup': case 'w': keys.current.forward = true; break;
+                case 'arrowdown': case 's': keys.current.backward = true; break;
+                case 'arrowleft': case 'a': keys.current.left = true; break;
+                case 'arrowright': case 'd': keys.current.right = true; break;
+                case 'shift': keys.current.drift = true; break;
             }
         };
 
         const handleKeyUp = (e) => {
-            switch (e.key) {
-                case 'ArrowUp': keys.current.forward = false; break;
-                case 'ArrowDown': keys.current.backward = false; break;
-                case 'ArrowLeft': keys.current.left = false; break;
-                case 'ArrowRight': keys.current.right = false; break;
-                case 'Shift': keys.current.drift = false; break;
+            switch (e.key.toLowerCase()) {
+                case 'arrowup': case 'w': keys.current.forward = false; break;
+                case 'arrowdown': case 's': keys.current.backward = false; break;
+                case 'arrowleft': case 'a': keys.current.left = false; break;
+                case 'arrowright': case 'd': keys.current.right = false; break;
+                case 'shift': keys.current.drift = false; break;
             }
         };
 
