@@ -1,0 +1,44 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #FF0099; /* Hot Pink */
+  --color-primary-dark: #CC007A;
+  --color-secondary: #00E5FF; /* Electric Blue */
+  --color-secondary-dark: #00B8CC;
+  
+  /* Accent Colors */
+  --color-accent-yellow: #FFD500; /* Bright Yellow */
+  --color-accent-orange: #FF6600; /* Vibrant Orange */
+  --color-accent-green: #33FF00; /* Lime Green */
+  --color-accent-purple: #9900FF;
+  
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-100: #F0F0F0;
+  --color-gray-800: #333333;
+
+  /* Backgrounds */
+  --bg-gradient-main: linear-gradient(135deg, #00E5FF 0%, #9900FF 100%);
+  --bg-gradient-card: linear-gradient(to bottom, #FFFFFF, #F0F0F0);
+
+  /* Typography */
+  --font-heading: 'Bangers', cursive, sans-serif; /* We will need to import this */
+  --font-body: 'Nunito', sans-serif;
+
+  /* Shapes */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  
+  /* Borders & Shadows */
+  --border-width: 3px;
+  --border-black: var(--border-width) solid var(--color-black);
+  --shadow-pop: 4px 4px 0px var(--color-black);
+  --shadow-pop-hover: 2px 2px 0px var(--color-black);
+  --shadow-glow: 0 0 15px rgba(0, 229, 255, 0.6);
+
+  /* Animations */
+  --transition-bounce: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition-smooth: all 0.2s ease-in-out;
+}
